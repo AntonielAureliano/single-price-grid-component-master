@@ -31,6 +31,8 @@ main {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   max-width: 40rem;
 }
 
@@ -98,6 +100,7 @@ main {
 
 .subscription a {
   background-color: var(--primary-bright-yellow);
+  border-radius: 0.3125rem;
   color: var(--primary-white);
   display: block;
   margin-top: 1.5625rem;
@@ -106,6 +109,26 @@ main {
   text-decoration: none;
 }
 
+/*why-us*/
+
+.why-us {
+  background-color: var(--primary-cyan-two);
+  padding: 2.5rem;
+}
+
+.why-us h3 {
+  color: var(--neutral-light-gray);
+  margin-bottom: 1.5625rem;
+}
+
+.why-us p {
+  color: var(--neutral-light-gray);
+  line-height: 1.6;
+}
+
+.why-us p {
+  max-width: 22ch;
+}
 /*Footer*/
 .attribution {
   font-size: 0.6875rem;
