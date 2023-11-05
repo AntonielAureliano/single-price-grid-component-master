@@ -2,11 +2,14 @@
 
 :root {
   --primary-cyan: hsl(179, 62%, 43%);
+  --primary-cyan-two: hsl(179, 47%, 52%);
   --primary-bright-yellow: hsl(71, 73%, 54%);
   --primary-white: hsl(0, 0%, 100%);
+  --primary-link: hsl(228, 45%, 44%);
 
   --neutral-light-gray: hsl(204, 43%, 93%);
   --neutral-grayish-blue: hsl(218, 22%, 67%);
+  --neutral-dark-cyan: hsl(182, 52%, 58%);
 }
 * {
   box-sizing: border-box;
@@ -28,8 +31,10 @@ main {
 }
 
 .container {
-  max-width: 39rem;
+  max-width: 40rem;
 }
+
+/*description*/
 
 .description {
   background-color: var(--primary-white);
@@ -38,13 +43,13 @@ main {
 }
 
 .description h2 {
-  color: var(--primary-cyan);
-  margin-bottom: 23px;
+  color: var(--primary-cyan-two);
+  margin-bottom: 1.4375rem;
 }
 
 .description h3 {
   color: var(--primary-bright-yellow);
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .description p {
@@ -52,11 +57,60 @@ main {
   line-height: 1.6;
 }
 
+/*register*/
+
+.register {
+  display: flex;
+}
+
+/*subscription*/
+
+.subscription {
+  background-color: var(--primary-cyan);
+  border-radius: 0 0 0 0.625rem;
+  max-width: 20rem;
+  padding: 2.5rem;
+}
+
+.subscription h3 {
+  color: var(--neutral-light-gray);
+  margin-bottom: 1.5625rem;
+}
+
+.subscription p {
+  color: var(--neutral-light-gray);
+  margin-top: 0.3125rem;
+}
+
+.subscription-price {
+  color: var(--primary-white) !important;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  gap: 0.75rem;
+}
+
+.subscription-price span {
+  align-self: center;
+  color: var(--neutral-dark-cyan);
+  font-size: 1rem;
+}
+
+.subscription a {
+  background-color: var(--primary-bright-yellow);
+  color: var(--primary-white);
+  display: block;
+  margin-top: 1.5625rem;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
 /*Footer*/
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--primary-link);
 }
