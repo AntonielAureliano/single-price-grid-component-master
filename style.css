@@ -31,14 +31,15 @@ main {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   max-width: 40rem;
 }
 
 /*description*/
 
 .description {
+  grid-column: 1 / -1;
   background-color: var(--primary-white);
   border-radius: 0.625rem 0.625rem 0 0;
   padding: 2.5rem;
@@ -59,29 +60,24 @@ main {
   line-height: 1.6;
 }
 
-/*register*/
-
-.register {
-  display: flex;
-}
-
 /*subscription*/
 
 .subscription {
   background-color: var(--primary-cyan);
   border-radius: 0 0 0 0.625rem;
-  max-width: 20rem;
   padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .subscription h3 {
   color: var(--neutral-light-gray);
-  margin-bottom: 1.5625rem;
+  margin-bottom: 1.25rem;
 }
 
 .subscription p {
   color: var(--neutral-light-gray);
-  margin-top: 0.3125rem;
 }
 
 .subscription-price {
@@ -103,7 +99,7 @@ main {
   border-radius: 0.3125rem;
   color: var(--primary-white);
   display: block;
-  margin-top: 1.5625rem;
+  margin-top: 2.375rem;
   padding: 15px 0;
   text-align: center;
   text-decoration: none;
@@ -123,7 +119,7 @@ main {
 
 .why-us p {
   color: var(--neutral-light-gray);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .why-us p {
