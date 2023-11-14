@@ -7,6 +7,8 @@
   --primary-white: hsl(0, 0%, 100%);
   --primary-link: hsl(228, 45%, 44%);
 
+  --secondary-shadow-gray: rgba(44, 44, 44, 0.15);
+
   --neutral-light-gray: hsl(204, 43%, 93%);
   --neutral-grayish-blue: hsl(218, 22%, 67%);
   --neutral-dark-cyan: hsl(182, 52%, 58%);
@@ -34,6 +36,12 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 40rem;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    grid-template-columns: auto;
+  }
 }
 
 /*description*/
@@ -97,10 +105,12 @@ main {
 .subscription a {
   background-color: var(--primary-bright-yellow);
   border-radius: 0.3125rem;
+  box-shadow: 0.3125rem 0.3125rem 0.9375rem 0 var(--secondary-shadow-gray);
   color: var(--primary-white);
   display: block;
+  font-size: 1.125rem;
   margin-top: 2.375rem;
-  padding: 15px 0;
+  padding: 1rem 0;
   text-align: center;
   text-decoration: none;
 }
@@ -110,6 +120,7 @@ main {
 .why-us {
   background-color: var(--primary-cyan-two);
   padding: 2.5rem;
+  border-radius: 0 0 0.625rem 0;
 }
 
 .why-us h3 {
