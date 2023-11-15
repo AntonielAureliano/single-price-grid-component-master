@@ -8,12 +8,9 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
+  - [Built with](#built-with) -
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -26,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Final result](./screenshot.jpg)
+![Final result](./images/print-single.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/AntonielAureliano/single-price-grid-component-master)
+- Live Site URL: (https://single-price-grid-component-master-coral.vercel.app)
 
 ### Built with
 

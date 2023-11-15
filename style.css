@@ -129,6 +129,10 @@ main {
   text-align: center;
   text-decoration: none;
 }
+.subscription a:hover {
+  color: var(--primary-cyan-two);
+  font-weight: 700;
+}
 
 @media screen and (max-width: 375px) {
   .subscription {
